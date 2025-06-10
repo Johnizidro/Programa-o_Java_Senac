@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Funções JavaScript Simples</title>
+</head>
+<body>
+
+  <script>
+    // Fila de Clientes
+    document.write("<h3>Fila de Clientes</h3>");
+    let fila = ["Ana", "Pedro", "Carla"];
+    document.write("Fila Original: " + fila.join(", ") + "<br>");
+    fila.push("João");
+    fila.shift();
+    document.write("Fila Após Modificações: " + fila.join(", ") + "<hr>");
+
+    // Tarefas do Dia
+    document.write("<h3>Tarefas do Dia</h3>");
+    let tarefas = ["Tomar Café", " Estudar", "Trabalhar", "Limpar a Casa", "Ler"];
+    document.write("Tarefas Originais: " + tarefas.join(", ") + "<br>");
+    tarefas.shift();
+    tarefas.push("Assistir Série");
+    document.write("Tarefas Após Modificações: " + tarefas.join(", ") + "<hr>");
+
+    // Média do Aluno
+    document.write("<h3>Média do Aluno</h3>");
+    let notas = [8, 9, 7, 6, 4];
+    document.write("Notas: " + notas.join(", ") + "<br>");
+    let media = notas.reduce((soma, nota) => soma + nota, 0) / notas.length;
+    document.write("Média Calculada: " + media.toFixed(2) + "<hr>");
+
+    // Preços com Desconto
+    document.write("<h3>Preços com Desconto</h3>");
+    let precos = [100, 50, 60];
+    document.write("Preços Originais: " + precos.join(", ") + "<br>");
+    let precosComDesconto = precos.map(preco => preco * 0.9);
+    document.write("Com Desconto (10%): " + precosComDesconto.map(p => p.toFixed(2)).join(", ") + "<hr>");
+
+    // Verificação de Convidado
+    document.write("<h3>Convidado Encontrado</h3>");
+    let convidados = ["Marcos", "Fernanda", "Paulo", "Aline"];
+    document.write("Lista de Convidados: " + convidados.join(", ") + "<br>");
+    let pauloExiste = convidados.includes("Paulo");
+    document.write("Paulo está na lista? " + (pauloExiste ? "Sim" : "Não") + "<hr>");
+  </script>
+
+</body>
+</html>
