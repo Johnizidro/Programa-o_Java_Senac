@@ -10,38 +10,47 @@
 </head>
 <body>
     
-    <body>
+   
+  <h1>Funções JavaScript Interativas</h1>
 
-        <h1>Funções JavaScript Interativas</h1>
-      
-        <div class="container">
-          <div class="title">Fila de Clientes</div>
-          <pre id="fila"></pre>
-          <button onclick="executarFila()">Executar</button>
-        </div>
-      
-        <div class="container">
-          <div class="title">Tarefas do Dia</div>
-          <pre id="tarefas"></pre>
-          <button onclick="executarTarefas()">Executar</button>
-        </div>
-      
-        <div class="container">
-          <div class="title">Média do Aluno</div>
-          <pre id="media"></pre>
-          <button onclick="calcularMedia()">Executar</button>
-        </div>
-      
-        <div class="container">
-          <div class="title">Preços com Desconto</div>
-          <pre id="desconto"></pre>
-          <button onclick="aplicarDesconto()">Executar</button>
-        </div>
-      
-        <div class="container">
-          <div class="title">Convidado Encontrado</div>
-          <pre id="convidado"></pre>
-          <button onclick="verificarConvidado()">Executar</button>
-        </div>
+  <!-- Fila de Clientes -->
+  <div class="container">
+    <div class="title">Fila de Clientes</div>
+    <pre id="fila"></pre>
+    <button onclick="mostrarFilaInicial()">Mostrar Fila Atual</button>
+    <button onclick="executarFila()">Executar Modificações</button>
+  </div>
+
+  <!-- Tarefas do Dia -->
+  <div class="container">
+    <div class="title">Tarefas do Dia</div>
+    <pre id="tarefas"></pre>
+    <button onclick="mostrarTarefasIniciais()">Mostrar Tarefas Atuais</button>
+    <button onclick="executarTarefas()">Executar Modificações</button>
+  </div>
+
+  <!-- Média do Aluno -->
+  <div class="container">
+    <div class="title">Média do Aluno</div>
+    <pre id="media"></pre>
+    <button onclick="mostrarNotas()">Mostrar Notas</button>
+    <button onclick="calcularMedia()">Calcular Média</button>
+  </div>
+
+  <!-- Preços com Desconto -->
+  <div class="container">
+    <div class="title">Preços com Desconto</div>
+    <pre id="desconto"></pre>
+    <button onclick="mostrarPrecosOriginais()">Mostrar Preços</button>
+    <button onclick="aplicarDesconto()">Aplicar Desconto</button>
+  </div>
+
+  <!-- Convidado Encontrado -->
+  <div class="container">
+    <div class="title">Convidado Encontrado</div>
+    <pre id="convidado"></pre>
+    <button onclick="mostrarConvidados()">Mostrar Lista de Convidados</button>
+    <button onclick="verificarConvidado()">Verificar se Paulo está na lista</button>
+  </div>
 </body>
 </html>
