@@ -52,3 +52,53 @@ function verificarConvidado() {
     ? "Sim, Paulo está na lista."
     : "Não, Paulo não está na lista.";
 }
+  // Lista de Ingredientes
+  const ingredientesOriginais = ["Farinha", "Ovos", "Leite", "Açúcar"];
+  function mostrarIngredientes() {
+    document.getElementById("ingredientes").textContent = ingredientesOriginais.join(", ");
+  }
+  function mostrarReceita() {
+    let receita = "Os ingredientes são: " + ingredientesOriginais.join(", ");
+    document.getElementById("ingredientes").textContent = receita;
+  }
+
+  // Ordem Crescente
+  const numerosOriginais = [5, 1, 9, 3, 7];
+  function mostrarNumerosOriginais() {
+    document.getElementById("ordemCrescente").textContent = numerosOriginais.join(", ");
+  }
+  function ordenarNumeros() {
+    let nums = [...numerosOriginais];
+    nums.sort((a, b) => a - b);
+    document.getElementById("ordemCrescente").textContent = nums.join(", ");
+  }
+
+  // Caixa Alta
+  const nomesOriginais = ["ana", "bruno", "carla"];
+  function mostrarNomesOriginais() {
+    document.getElementById("caixaAlta").textContent = nomesOriginais.join(", ");
+  }
+  function converterCaixaAlta() {
+    let maiusculos = nomesOriginais.map(nome => nome.toUpperCase());
+    document.getElementById("caixaAlta").textContent = maiusculos.join(", ");
+  }
+
+  // Número maior que 50
+  const numerosMaior50 = [10, 25, 60, 45, 60];
+  function mostrarNumeros() {
+    document.getElementById("maiorQue50").textContent = numerosMaior50.join(", ");
+  }
+  function mostrarMaiorQue50() {
+    let maior = numerosMaior50.find(num => num > 50);
+    document.getElementById("maiorQue50").textContent = `Primeiro número maior que 50: ${maior}`;
+  }
+
+  // Números Pares
+  const listaNumerosPares = [12, 25, 30, 47, 50, 63, 72, 89, 90, 100];
+  function mostrarListaCompleta() {
+    document.getElementById("numerosPares").textContent = listaNumerosPares.join(", ");
+  }
+  function mostrarPares() {
+    let pares = listaNumerosPares.filter(num => num % 2 === 0);
+    document.getElementById("numerosPares").textContent = pares.join(", ");
+  }

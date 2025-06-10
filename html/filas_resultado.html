@@ -43,6 +43,39 @@
     document.write("Lista de Convidados: " + convidados.join(", ") + "<br>");
     let pauloExiste = convidados.includes("Paulo");
     document.write("Paulo está na lista? " + (pauloExiste ? "Sim" : "Não") + "<hr>");
+     // Lista de Ingredientes
+     document.write("<h3>Lista de Ingredientes</h3>");
+    let ingredientes = ["Farinha", "Ovos", "Leite", "Açúcar"];
+    let receita = "Os ingredientes são: " + ingredientes.join(", ");
+    document.write(receita + "<hr>");
+
+    // Ordem Crescente
+    document.write("<h3>Ordem Crescente</h3>");
+    let numeros = [5, 1, 9, 3, 7];
+    document.write("Original: " + numeros.join(", ") + "<br>");
+    numeros.sort((a, b) => a - b);
+    document.write("Ordenado: " + numeros.join(", ") + "<hr>");
+
+    // Transformando em Caixa Alta
+    document.write("<h3>Transformando em Caixa Alta</h3>");
+    let nomes = ["ana", "bruno", "carla"];
+    document.write("Original: " + nomes.join(", ") + "<br>");
+    let nomesMaiusculos = nomes.map(nome => nome.toUpperCase());
+    document.write("Caixa Alta: " + nomesMaiusculos.join(", ") + "<hr>");
+
+    // Encontrando número maior que 50
+    document.write("<h3>Primeiro Número Maior que 50</h3>");
+    let numero = [10, 25, 60, 45, 60];
+    document.write("Números: " + numero.join(", ") + "<br>");
+    let maiorQue50 = numero.find(num => num > 50);
+    document.write("Primeiro > 50: " + maiorQue50 + "<hr>");
+
+    // Números Pares
+    document.write("<h3>Números Pares</h3>");
+    let number = [12, 25, 30, 47, 50, 63, 72, 89, 90, 100];
+    document.write("Lista Completa: " + number.join(", ") + "<br>");
+    let pares = number.filter(num => num % 2 === 0);
+    document.write("Números Pares: " + pares.join(", ") + "<hr>");
   </script>
 
 </body>
