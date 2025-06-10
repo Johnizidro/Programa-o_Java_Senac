@@ -1,0 +1,280 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: #fffddf;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Título centralizado */
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #2c3e50;
+  }
+  
+  h2{color: #2c3e50;}
+  /* Container principal com display flex para dividir o texto e a imagem */
+  #container_inicial {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Texto dentro do container */
+  #content_java {
+    flex: 1 1 400px;
+    background: #fff;
+    padding: 30px 35px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    line-height: 1.7;
+    font-size: 1.2rem; /* fonte maior */
+    color: #444;
+  }
+  
+  #content_java ul {
+    list-style-type: disc;
+    padding-left: 25px; /* para alinhar com o texto, criando espaço do lado esquerdo */
+    margin-top: -10px;  /* reduz o espaçamento acima da lista pra ficar próximo do parágrafo */
+    color: #34495e;
+    font-weight: 500;
+  }
+  
+  #content_java ul li {
+    margin-bottom: 12px;
+    font-size: 1.15rem; /* deixa os itens da lista um pouco maiores */
+  }
+  /* Estilo para o texto do parágrafo e para a lista */
+  #content_java p {
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #2c3e50;
+  }
+  /* Imagem dentro do container */
+  #IMG_java {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #IMG_java img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
+  /* Tabela ocupando toda a largura da tela */
+  table {
+    width: 100vw;
+    max-width: 100%;
+    border-collapse: separate; /* pra poder arredondar cantos */
+    border-spacing: 0;
+    background: #ffffff;
+    box-shadow: 0 6px 20px rgba(41, 128, 185, 0.3);
+    border-radius: 15px;
+    margin: 0 auto 40px auto;
+    font-size: 1rem;
+    overflow: hidden; /* pra garantir que os cantos arredondados funcionem */
+  }
+  
+  /* Cabeçalho */
+  table th {
+    background: #1f618d;
+    color: #f0f3f4;
+    text-align: left;
+    padding: 15px 20px;
+    font-weight: 700;
+    border-bottom: 3px solid #1a5276;
+  }
+  
+  /* Linhas com cores alternadas “sim” e “não” (azul claro e cinza claro) */
+  table tr:nth-child(odd) {
+    background-color: #d6eaf8; /* azul clarinho */
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f4f6f7; /* cinza clarinho */
+  }
+  
+  /* Células */
+  table td {
+    padding: 15px 20px;
+    vertical-align: top;
+    color: #2c3e50;
+    white-space: pre-line;
+    border-bottom: 1px solid #c5d6e8;
+  }
+  
+  /* Remove borda da última linha */
+  table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  /* Cantos arredondados só na primeira e última célula da primeira e última linha */
+  table tr:first-child th:first-child {
+    border-top-left-radius: 15px;
+  }
+  
+  table tr:first-child th:last-child {
+    border-top-right-radius: 15px;
+  }
+  
+  table tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+  }
+  
+  table tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
+  }
+  
+  /* Hover para destacar a linha */
+  table tr:hover {
+    background-color: #aed6f1 !important;
+    cursor: pointer;
+  }
+  
+  #paragrafo {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    min-height: 40px; /* Espaço para evitar pular quando conteúdo muda */
+  }
+  
+  #projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+  }
+  
+  #calculadora, #IMC {
+    background: white;
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    flex-grow: 1; /* Permite que as divs cresçam para preencher o espaço disponível */
+    flex-basis: 45%; /* Define a largura base das divs como 45% do contêiner */
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 300px; /* Define uma largura mínima para as divs */
+    max-height: 90vh; /* Limita a altura máxima das divs */
+    overflow-y: auto; /* Adiciona rolagem vertical se o conteúdo exceder a altura máxima */
+  }
+  /* Centraliza texto e botões da calculadora simplificada */
+  #calculadora {
+    text-align: center;
+  }
+  
+  #calculadora h1 {
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  #calculadora button {
+    background-color: #2575fc;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    margin: 0 25px 30px 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(37, 117, 252, 0.4);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  }
+  
+  #calculadora button:hover {
+    background-color: #1a56d1;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(26, 86, 209, 0.6);
+  }
+  
+  /* Estilos para o container interno do IMC */
+  #IMC .container {
+    padding: 0; /* já tem padding no pai */
+    box-shadow: none;
+    border-radius: 0;
+    max-width: 100%;
+    width: 100%;
+    text-align: left;
+  }
+  
+  /* Título do IMC */
+  #titulo1 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Label estilo */
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Inputs estilo */
+  input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Botão IMC */
+  #IMC button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  #IMC button:hover {
+    background: #0056b3;
+  }
+  
+  /* Resultado IMC */
+  .resultado {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+  }
+  /* Responsividade */
+  @media (max-width: 768px) {
+    #container_inicial {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    table {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  }
+  

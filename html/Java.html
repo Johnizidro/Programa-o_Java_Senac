@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Java.css">
+    <title>Resumo sobre Java</title>
+</head>
+<body>
+    <h1> Conteudo sobre Java Script</h1>
+
+ <div id="container_inicial">
+        <div id="content_java">
+            <h2> Java Script</h2>
+            <P> <strong>Sobre o Java:</strong> JavaScript é uma linguagem de script que roda no navegador (como Chrome, Firefox, Safari) e permite que os sites façam coisas 
+            dinâmicas, como responder a cliques, validar formulários, criar animações, carregar conteúdo sem precisar atualizar a página, entre outros. Por exemplo, quando você clica num 
+            botão e algo muda na página sem precisar recarregar, provavelmente é JavaScript funcionando. Também é usado para jogos online, a
+            plicativos web, e até em servidores (com Node.js). </P>
+            <ul>
+                <li>HTML cria a estrutura da página (os textos, imagens, etc.)</li>
+                <li>CSS define o estilo (cores, fontes, layout)</li>
+                <li>JavaScript controla o comportamento e a interatividade.</li>
+              </ul>
+        
+        </div>
+        <div id="IMG_java">
+    <img src="/img/JavaScript_code.png">
+        </div>
+
+<div>
+<table>
+    <tr>
+        <th>Comando</th>
+        <th>Sintaxe</th>
+        <th>Função</th>
+      </tr>
+      <tr>
+        <td>Var, const, let</td>
+        <td>var = Maria;
+            Const = Maria;
+            Let = Maria
+        </td>
+        <td>Define uma variavel, sendo var uma varivel que pode ter seu valor alterado e utilizado em qualquer parte do comando, let so pode ser utilizado em um determinado bloco de comando, e const não tem seu valor alterado</td>
+      </tr>
+      <tr>
+        <td>Alert</td>
+        <td>Alert("Bem-Vindo!")</td>
+        <td>Imprime um dado na tela para visualização do usuário, utilizando uma caixa de aviso nativa do navegador</td>
+      </tr>
+      <tr>
+        <td>If/Else</td>
+        <td> if() {} else() {}</td>
+        <td>Estrutura condicional para controle de ações lógicas dos comandos</td>
+      </tr>
+      <tr>
+        <td>+,-,/,*</td>
+        <td>resultado = var1 + var2</td>
+        <td>Comando aritiméticos para definição de contas dentro do bloco de comandos</td>
+      </tr>
+      <tr>
+        <td>GetElementById</td>
+        <td>GetElementById("Container")</td>
+        <td>Puxa determinado elemento de acordo com o seu id e aplica alguma mudança sobre ele</td>
+      </tr>
+      <tr>
+        <td>InnerText</td>
+        <td>InnerText = "Novo Texto"</td>
+        <td>Altera um texto de determinado elemento de acordo com a tag ou id que ele possui</td>
+      </tr>
+      <tr>
+        <td>function</td>
+        <td>function BotaoClicl(){}</td>
+        <td>Inicia uma função e os comando internos dela, como o click de um botão para fazer uma conta</td>
+      </tr>
+      <tr>
+        <td>Prompt</td>
+        <td>var = prompt("Insira um valor")</td>
+        <td>Inserção de valores no navegador, entrada de dados por parte do usuário</td>
+      </tr>
+
+</table>
+
+</div>
+</div> 
+
+<h2>Exemplos de projetos com aplicação de Java Script</h2>
+<div id="projetos-container"> 
+  <div id="calculadora">
+    <h1>Calculadora Simplificada</h1>
+    <p id="paragrafo"></p>
+    <button onclick="acaoBotao()">Iniciar Sessão</button>
+    <button onclick="BotaoReset()">Resetar Conta</button>
+  </div>
+
+  <div id="IMC">
+    <div class="container">
+      <h1 id="titulo1">Calculadora de IMC</h1>
+      <label for="peso">Peso (kg):</label>
+      <input type="number" id="peso" placeholder="Ex: 70 Kg" min="1" step="any" />
+      
+      <label for="altura">Altura (m):</label>
+      <input type="number" id="altura" placeholder="Ex: 1.75 M" min="0.5" step="any" />
+      
+      <button onclick="calcularIMC()">Calcular IMC</button>
+      
+      <div class="resultado" id="resultado"></div>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+</body>
+<script src="/JS/IMC.js"></script>
+<script src="/JS/calculadora.js"></script>
+</html>
