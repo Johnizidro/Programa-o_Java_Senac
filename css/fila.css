@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    background: #ebd3d3;
     padding: 20px;
   }
 
@@ -23,7 +23,7 @@ body {
   }
 
   pre {
-    background: #eee;
+    background: #ffdddd;
     padding: 10px;
     border-radius: 5px;
     overflow-x: auto;
