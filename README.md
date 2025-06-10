@@ -1,4 +1,4 @@
-# Repositório de Projetos JavaScript
+                                                                                                               # Repositório de Projetos JavaScript
 
 Este repositório contém projetos simples em JavaScript que demonstram conceitos básicos da linguagem, como operações matemáticas, manipulação de listas e lógica de programação, geralmente aplicados em páginas web.
 
@@ -14,13 +14,13 @@ Este repositório contém projetos simples em JavaScript que demonstram conceito
    ```bash
    git clone https://Programa-o_Java_Senac.git
 
-Tecnologias utilizadas
+## Tecnologias utilizadas
 - JavaScript
 - HTML
 - CSS (quando aplicável)
 
-Contribuições
+## Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
 
-Licença
+## Licença
 Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
