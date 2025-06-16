@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login e Cadastro</title>
+    <link rel="stylesheet" href="/css/login.css">
+    
+</head>
+<body>
+    <div class="form-container">
+        <input type="radio" name="tab" id="login-tab" checked>
+        <input type="radio" name="tab" id="signup-tab">
+        
+        <div class="tabs">
+            <label for="login-tab" class="tab">Login</label>
+            <label for="signup-tab" class="tab">Cadastro</label>
+        </div>
+
+        <!-- Formulário de Login -->
+        <div class="form login-form">
+            <h2>Entrar</h2>
+            <form action="#" method="post">
+                <label for="login-user">Usuário:</label>
+                <input type="text" id="login-user" name="username" required>
+
+                <label for="login-pass">Senha:</label>
+                <input type="password" id="login-pass" name="password" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+
+        <!-- Formulário de Cadastro -->
+        <div class="form signup-form">
+            <h2>Cadastrar</h2>
+            <form action="#" method="post">
+                <label for="signup-user">Usuário:</label>
+                <input type="text" id="signup-user" name="new-username" required>
+
+                <label for="signup-email">E-mail:</label>
+                <input type="email" id="signup-email" name="email" required>
+
+                <label for="signup-pass">Senha:</label>
+                <input type="password" id="signup-pass" name="new-password" required>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="/JS/login.js"></script>
+</html>
